@@ -36,7 +36,7 @@ def buildWordDict(text):
             #Create a new dictionary for this word
             wordDict[words[i-1]] = {}
         if words[i] not in wordDict[words[i-1]]:
-            wordDict[words[i-1]][words[i]] = 0
+            wordDict[words[i-1]][words[i]] = 1     #must be 1
         wordDict[words[i-1]][words[i]] += 1
 
     return wordDict
